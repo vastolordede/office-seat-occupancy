@@ -1,36 +1,61 @@
-# Python
+# Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .ipynb_checkpoints/
 
 # Environment
 .venv/
 venv/
+env/
 .env
 
-# Data
-data/*
+# Data - keep local only
+data/**
+!data/
 !data/.gitkeep
 
-# Training outputs
-runs/*
+# Outputs - keep local only
+runs/**
+outputs/**
+weights/**
+models/**
+
+!runs/
 !runs/.gitkeep
-
-outputs/*
+!outputs/
 !outputs/.gitkeep
-
-weights/*
+!weights/
 !weights/.gitkeep
 
-# Large model files
+# Large model/export files
 *.pt
 *.pth
 *.onnx
 *.engine
+*.tflite
+*.keras
+*.h5
 
-# Logs
+# Logs/artifacts
 *.log
+*.csv
+*.jsonl
 
-# OS
+# Only keep training code in src
+src/*
+!src/train.py
+!src/__init__.py
+
+# Keep configs/docs/requirements
+!configs/
+!docs/
+!notebooks/
+!requirements.txt
+!README.md
+
+# OS/editor
 .DS_Store
 Thumbs.db
+.vscode/
