@@ -1,6 +1,4 @@
 ultralytics
-torch
-torchvision
 opencv-python
 pandas
 numpy
