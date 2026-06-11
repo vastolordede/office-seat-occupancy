@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment
+.venv/
+venv/
+.env
+
+# Data
+data/*
+!data/.gitkeep
+
+# Training outputs
+runs/*
+!runs/.gitkeep
+
+outputs/*
+!outputs/.gitkeep
+
+weights/*
+!weights/.gitkeep
+
+# Large model files
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
