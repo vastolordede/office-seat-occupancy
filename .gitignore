@@ -11,12 +11,12 @@ venv/
 env/
 .env
 
-# Data - keep local only
+# Local data - do not push datasets
 data/**
 !data/
 !data/.gitkeep
 
-# Outputs - keep local only
+# Local outputs - do not push
 runs/**
 outputs/**
 weights/**
@@ -48,12 +48,13 @@ src/*
 !src/train.py
 !src/__init__.py
 
-# Keep configs/docs/requirements
+# Keep project files
 !configs/
 !docs/
 !notebooks/
 !requirements.txt
 !README.md
+!.gitignore
 
 # OS/editor
 .DS_Store
