@@ -1,0 +1,22 @@
+experiment_name: exp002_yolov8n_chair_person_200e
+
+model: yolov8n.pt
+data: data/processed/chair_person_yolo/data.yaml
+
+epochs: 200
+imgsz: 640
+batch: 16
+device: 0
+workers: 2
+seed: 42
+patience: 30
+
+project: runs
+name: exp002_yolov8n_chair_person_200e
+exist_ok: true
+
+plots: true
+
+custom_eval_split: test
+custom_conf: 0.25
+custom_iou: 0.50
